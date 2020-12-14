@@ -3,16 +3,238 @@
 
 <head>
     <!-- Required meta tags -->
+    <link rel="icon" href="./assets//icons/logo.ico">
     <meta charset="utf-8">
     <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
     <title>Wojciech Melone</title>
-    <meta name="description" content="CodersCamp to darmowy, otwarty kurs programowania webowego we Wrocławiu. Sprawdź, czego nauczysz się na CodersCamp i spróbuj swoich sił w branży IT!">
-
+    <meta name="description"
+        content="CodersCamp to darmowy, otwarty kurs programowania webowego we Wrocławiu. Sprawdź, czego nauczysz się na CodersCamp i spróbuj swoich sił w branży IT!">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.1/css/all.min.css"
+        integrity="sha512-+4zCK9k+qNFUR5X+cKL9EIR+ZOhtIloNl9GIKS57V1MyNsYpYcUrUeQc9vNfzsWfV28IaLL3i96P9sdNyeRssA=="
+        crossorigin="anonymous" />
+    <link rel="stylesheet" href="./style.css">
 </head>
 
 <body>
+    <header>
+        <nav>
+            <div id="mobile-hamburger"></div>
+            <a href="#" id="logo">WM</a>
+            <ul>
+                <li><a href="#about">About</a></li>
+                <li><a href="#skills">Skills</a></li>
+                <li><a href="#projects">Projects</a></li>
+                <li><a href="#contact">Contact</a></li>
+            </ul>
+        </nav>
+    </header>
+    <section id='intro'>
+        <div class="overlay"></div>
+        <article>
+            <h1><span class="name">Wojciech</span> <span class="name">Melone</span></h1>
+            <p>Junior Frontend Developer</p>
+        </article>
+    </section>
 
-<p>CodersCamp - projekt 1. Tutaj możesz zacząć swoją zabawę!</p>
+    <section id="about" class="section">
+        <h1 class="heading">About</h1>
+        <article>
+            <img src="./assets/images/WojciechMelone.jpg" alt="Wojciech Melone">
+            <p>
+                I'm a self-taught junior fronted developer. I finished bachelor's degree in Quantitative Methods and
+                Information
+                Systems
+                in Economics at the Warsaw School of Economics. For over a year, I've been developing my programming
+                skills to get
+                my
+                first job. I'm interested in the stock market nad basketball.
+            </p>
+        </article>
+    </section>
 
+    <section id='skills' class="section">
+        <h1 class="heading">Skills</h1>
+        <ul>
+            <li class="skills-element">
+                <div class="skill-icon html"></div>HTML
+            </li>
+            <li class="skills-element">
+                <div class="skill-icon css"></div>CSS
+            </li>
+            <li class="skills-element">
+                <div class="skill-icon javascript"></div>JavaScript
+            </li>
+            <li class="skills-element">
+                <div class="skill-icon react"></div>React
+            </li>
+            <li class="skills-element">
+                <div class="skill-icon redux"></div>Redux
+            </li>
+            <li class="skills-element">
+                <div class="skill-icon bootstrap"></div>Bootstrap
+            </li>
+            <li class="skills-element">
+                <div class="skill-icon framer-motion"></div>Framer Motion
+            </li>
+            <li class="skills-element">
+                <div class="skill-icon nodejs"></div>NodeJS
+            </li>
+            <li class="skills-element">
+                <div class="skill-icon express"></div>Express
+            </li>
+            <li class="skills-element">
+                <div class="skill-icon mongodb"></div>MongoDB
+            </li>
+            <li class="skills-element">
+                <div class="skill-icon git"></div>Git
+            </li>
+        </ul>
+    </section>
+    <section id='projects' class="section">
+        <h1 class="heading">Projects</h1>
+        <div class='container'>
+            <div class="project">
+                <div class="image-wrapper">
+                    <a href="https://house-of-cards.herokuapp.com/">
+                        <div class="project-image houseOfCards "></div>
+                    </a>
+                </div>
+                <div class="project-info">
+                    <h1>House of Cards</h1>
+                    <p>My first React app. I was inspired by Breaking Bad API and app from Traversy Media channel. I
+                        decided to create my own
+                        API using Node.js, Express.js and MongoDB.</p>
+                    <ul>
+                        <li>
+                            <div class="technology-icon react"></div>
+                            <p>React & Hooks</p>
+                        </li>
+                        <li>
+                            <div class="technology-icon styled-components"></div>
+                            <p>Styled Components</p>
+                        </li>
+                        <li>
+                            <div class="technology-icon nodejs"></div>
+                            <p>NodeJS</p>
+                        </li>
+                        <li>
+                            <div class="technology-icon express"></div>
+                            <p>Express</p>
+                        </li>
+                        <li>
+                            <div class="technology-icon mongodb"></div>
+                            <p>MongoDB</p>
+                        </li>
+                    </ul>
+                    <div class="project-buttons">
+                        <a href="https://house-of-cards.herokuapp.com/" class="project-button live-button">Live Demo</a>
+                        <a href="https://github.com/melone14/House_of_Cards" class="project-button"><i
+                                class="fab fa-github"></i></a>
+                    </div>
+
+                </div>
+            </div>
+            <div class="project">
+                <div class="image-wrapper">
+                    <a href="#">
+                        <div id="inProgress" class="project-image"></div>
+                    </a>
+                </div>
+                <div class="project-info">
+                    <h1>Lorem ipsum dolor</h1>
+                    <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Commodi cupiditate rerum recusandae
+                        eveniet
+                        temporibus</p>
+                    <ul>
+                        <li>
+                            <div class="technology-icon react"></div>
+                            <p>React & Hooks</p>
+                        </li>
+                        <li>
+                            <div class="technology-icon styled-components"></div>
+                            <p>Styled Components</p>
+                        </li>
+                    </ul>
+                    <div class="project-buttons">
+                        <a href="#" class="project-button live-button">Live Demo</a>
+                        <a href="#" class="project-button"><i class="fab fa-github"></i></a>
+                    </div>
+
+                </div>
+            </div>
+            <div class="project">
+                <div class="image-wrapper">
+                    <a href="#">
+                        <div id="inProgress" class="project-image"></div>
+                    </a>
+                </div>
+                <div class="project-info">
+                    <h1>Lorem ipsum dolor</h1>
+                    <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Commodi cupiditate rerum recusandae
+                        eveniet
+                        temporibus</p>
+                    <ul>
+                        <li>
+                            <div class="technology-icon html"></div>
+                            <p>HTML</p>
+                        </li>
+                        <li>
+                            <div class="technology-icon css"></div>
+                            <p>CSS</p>
+                        </li>
+                        <li>
+                            <div class="technology-icon javascript"></div>
+                            <p>JavaScript</p>
+                        </li>
+                    </ul>
+                    <div class="project-buttons">
+                        <a href="#" class="project-button live-button">Live Demo</a>
+                        <a href="#" class="project-button"><i class="fab fa-github"></i></a>
+                    </div>
+
+                </div>
+            </div>
+
+        </div>
+    </section>
+    <section id='contact' class="section">
+        <h1 class="heading">Contact</h1>
+        <div>
+            <ul>
+                <li class="facebook">
+                    <a href="https://www.facebook.com/wojtek.manbcd" target="_blank" rel="noopener noreferrer"><i
+                            class="fab fa-facebook-square"></i><span>Facebook</span>
+                    </a>
+                </li>
+                <li class="linkedin">
+                    <a href="https://www.linkedin.com/in/wojciech-melone-66a8791ba/" target="_blank"
+                        rel="noopener noreferrer"><i class="fab fa-linkedin"></i><span>Linkedin</span>
+                    </a>
+                </li>
+                <li class="github">
+                    <a href="https://github.com/melone14" target="_blank" rel="noopener noreferrer"><i
+                            class="fab fa-github-square"></i><span>Github</span>
+                    </a>
+                </li>
+                <li class="gmail">
+                    <a href="mailto:w.melone97@gmail.com" target="_blank" rel="noopener noreferrer"><i
+                            class="fas fa-envelope-square"></i><span>w.melone97@gmail.com</span>
+                    </a>
+                </li>
+            </ul>
+
+            <form action="#">
+                <input id="name" type="text" placeholder="Name" required>
+                <input id="email" type="email" placeholder="Email address" required>
+                <textarea placeholder="Message" rows="5" cols="50" required></textarea>
+                <input type="submit" value="Send message">
+            </form>
+        </div>
+    </section>
+    <footer>
+        <p>Wociech Melone © 2020-2022</p>
+        <p><a href='https://pngtree.com/so/classic'>classic png from pngtree.com</a></p>
+    </footer>
 </body>
+
 </html>
