@@ -2,7 +2,6 @@
 <html lang="pl">
 
 <head>
-    <!-- Required meta tags -->
     <link rel="icon" href="./assets//icons/logo.ico">
     <meta charset="utf-8">
     <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
@@ -16,31 +15,31 @@
 </head>
 
 <body>
-    <header>
-        <nav>
+    <header class="main-header">
+        <nav class="main-header__nav">
             <div id="mobile-hamburger"></div>
             <a href="#" id="logo">WM</a>
-            <ul>
-                <li><a href="#about">About</a></li>
-                <li><a href="#skills">Skills</a></li>
-                <li><a href="#projects">Projects</a></li>
-                <li><a href="#contact">Contact</a></li>
+            <ul class="main-header__nav-list">
+                <li class="main-header__nav-item"><a href="#about">About</a></li>
+                <li class="main-header__nav-item"><a href="#skills">Skills</a></li>
+                <li class="main-header__nav-item"><a href="#projects">Projects</a></li>
+                <li class="main-header__nav-item"><a href="#contact">Contact</a></li>
             </ul>
         </nav>
     </header>
-    <section id='intro'>
+    <section class="hero">
         <div class="overlay"></div>
-        <article>
-            <h1><span class="name">Wojciech</span> <span class="name">Melone</span></h1>
+        <article class="hero__article">
+            <h1><span class="hero__article-name">Wojciech</span> <span class="hero__article-name">Melone</span></h1>
             <p>Junior Frontend Developer</p>
         </article>
     </section>
 
-    <section id="about" class="section">
+    <section class="section about" id="about">
         <h1 class="heading">About</h1>
-        <article>
-            <img src="./assets/images/WojciechMelone.jpg" alt="Wojciech Melone">
-            <p>
+        <article class="about__container">
+            <img src="./assets/images/WojciechMelone.jpg" alt="Wojciech Melone" class="about__container-image">
+            <p class="about__container-paragraph">
                 I'm a self-taught junior fronted developer. I finished bachelor's degree in Quantitative Methods and
                 Information
                 Systems
@@ -52,178 +51,170 @@
         </article>
     </section>
 
-    <section id='skills' class="section">
+    <section id='skills' class="section skills">
         <h1 class="heading">Skills</h1>
-        <ul>
-            <li class="skills-element">
+        <ul class="skills__list">
+            <li class="skills-element skills__list-item">
                 <div class="skill-icon html"></div>HTML
             </li>
-            <li class="skills-element">
+            <li class="skills-element skills__list-item">
                 <div class="skill-icon css"></div>CSS
             </li>
-            <li class="skills-element">
+            <li class="skills-element skills__list-item">
                 <div class="skill-icon javascript"></div>JavaScript
             </li>
-            <li class="skills-element">
+            <li class="skills-element skills__list-item">
                 <div class="skill-icon react"></div>React
             </li>
-            <li class="skills-element">
+            <li class="skills-element skills__list-item">
                 <div class="skill-icon redux"></div>Redux
             </li>
-            <li class="skills-element">
+            <li class="skills-element skills__list-item">
                 <div class="skill-icon bootstrap"></div>Bootstrap
             </li>
-            <li class="skills-element">
+            <li class="skills-element skills__list-item">
                 <div class="skill-icon framer-motion"></div>Framer Motion
             </li>
-            <li class="skills-element">
+            <li class="skills-element skills__list-item">
                 <div class="skill-icon nodejs"></div>NodeJS
             </li>
-            <li class="skills-element">
+            <li class="skills-element skills__list-item">
                 <div class="skill-icon express"></div>Express
             </li>
-            <li class="skills-element">
+            <li class="skills-element skills__list-item">
                 <div class="skill-icon mongodb"></div>MongoDB
             </li>
-            <li class="skills-element">
+            <li class="skills-element skills__list-item">
                 <div class="skill-icon git"></div>Git
             </li>
         </ul>
     </section>
-    <section id='projects' class="section">
+    <section id='projects' class="section projects">
         <h1 class="heading">Projects</h1>
-        <div class='container'>
+        <div class='projects-container'>
             <div class="project">
-                <div class="image-wrapper">
-                    <a href="https://house-of-cards.herokuapp.com/">
-                        <div class="project-image houseOfCards "></div>
-                    </a>
-                </div>
+                <a href="https://house-of-cards.herokuapp.com/" class="project-image__wrapper">
+                    <img src="./assets/images/HoC.png" alt="" class="project-image">
+                    
+                </a>
                 <div class="project-info">
                     <h1>House of Cards</h1>
                     <p>My first React app. I was inspired by Breaking Bad API and app from Traversy Media channel. I
                         decided to create my own
                         API using Node.js, Express.js and MongoDB.</p>
-                    <ul>
-                        <li>
+                    <ul class="project-info__list">
+                        <li class="project-info__list-item">
                             <div class="technology-icon react"></div>
                             <p>React & Hooks</p>
                         </li>
-                        <li>
+                        <li class="project-info__list-item">
                             <div class="technology-icon styled-components"></div>
                             <p>Styled Components</p>
                         </li>
-                        <li>
+                        <li class="project-info__list-item">
                             <div class="technology-icon nodejs"></div>
                             <p>NodeJS</p>
                         </li>
-                        <li>
+                        <li class="project-info__list-item">
                             <div class="technology-icon express"></div>
                             <p>Express</p>
                         </li>
-                        <li>
+                        <li class="project-info__list-item">
                             <div class="technology-icon mongodb"></div>
                             <p>MongoDB</p>
                         </li>
                     </ul>
                     <div class="project-buttons">
                         <a href="https://house-of-cards.herokuapp.com/" class="project-button live-button">Live Demo</a>
-                        <a href="https://github.com/melone14/House_of_Cards" class="project-button"><i
+                        <a href="https://github.com/melone14/House_of_Cards" class="project-button github-btn"><i
                                 class="fab fa-github"></i></a>
                     </div>
-
                 </div>
             </div>
             <div class="project">
-                <div class="image-wrapper">
-                    <a href="#">
-                        <div id="inProgress" class="project-image"></div>
+                <a href="#" class="project-image__wrapper">
+                    <img src="./assets/images/coding.png" alt="" class="project-image-inProgress">
                     </a>
-                </div>
                 <div class="project-info">
                     <h1>Lorem ipsum dolor</h1>
                     <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Commodi cupiditate rerum recusandae
                         eveniet
                         temporibus</p>
-                    <ul>
-                        <li>
+                    <ul class="project-info__list">
+                        <li class="project-info__list-item">
                             <div class="technology-icon react"></div>
                             <p>React & Hooks</p>
                         </li>
-                        <li>
+                        <li class="project-info__list-item">
                             <div class="technology-icon styled-components"></div>
                             <p>Styled Components</p>
                         </li>
                     </ul>
                     <div class="project-buttons">
                         <a href="#" class="project-button live-button">Live Demo</a>
-                        <a href="#" class="project-button"><i class="fab fa-github"></i></a>
+                        <a href="#" class="project-button github-btn"><i class="fab fa-github"></i></a>
                     </div>
 
                 </div>
             </div>
             <div class="project">
-                <div class="image-wrapper">
-                    <a href="#">
-                        <div id="inProgress" class="project-image"></div>
-                    </a>
-                </div>
+                <a href="#" class="project-image__wrapper">
+                    <img src="./assets/images/coding.png" alt="" class="project-image-inProgress">
+                </a>
                 <div class="project-info">
                     <h1>Lorem ipsum dolor</h1>
                     <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Commodi cupiditate rerum recusandae
                         eveniet
                         temporibus</p>
-                    <ul>
-                        <li>
+                    <ul class="project-info__list">
+                        <li class="project-info__list-item">
                             <div class="technology-icon html"></div>
                             <p>HTML</p>
                         </li>
-                        <li>
+                        <li class="project-info__list-item">
                             <div class="technology-icon css"></div>
                             <p>CSS</p>
                         </li>
-                        <li>
+                        <li class="project-info__list-item">
                             <div class="technology-icon javascript"></div>
                             <p>JavaScript</p>
                         </li>
                     </ul>
                     <div class="project-buttons">
                         <a href="#" class="project-button live-button">Live Demo</a>
-                        <a href="#" class="project-button"><i class="fab fa-github"></i></a>
+                        <a href="#" class="project-button github-btn"><i class="fab fa-github"></i></a>
                     </div>
-
                 </div>
             </div>
-
         </div>
     </section>
-    <section id='contact' class="section">
+    <section id='contact' class="section contact">
         <h1 class="heading">Contact</h1>
-        <div>
-            <ul>
-                <li class="facebook">
-                    <a href="https://www.facebook.com/wojtek.manbcd" target="_blank" rel="noopener noreferrer"><i
+        <div class="contact__container">
+            <ul class="contact__list">
+                <li class="facebook contact__list-item">
+                    <a href="https://www.facebook.com/wojtek.manbcd" target="_blank" rel="noopener noreferrer" class="contact__list-item__link"><i
                             class="fab fa-facebook-square"></i><span>Facebook</span>
                     </a>
                 </li>
-                <li class="linkedin">
+                <li class="linkedin contact__list-item">
                     <a href="https://www.linkedin.com/in/wojciech-melone-66a8791ba/" target="_blank"
-                        rel="noopener noreferrer"><i class="fab fa-linkedin"></i><span>Linkedin</span>
+                        rel="noopener noreferrer" class="contact__list-item__link"><i class="fab fa-linkedin"></i><span>Linkedin</span>
                     </a>
                 </li>
-                <li class="github">
-                    <a href="https://github.com/melone14" target="_blank" rel="noopener noreferrer"><i
+                <li class="github contact__list-item">
+                    <a href="https://github.com/melone14" target="_blank" rel="noopener noreferrer" class="contact__list-item__link"><i
                             class="fab fa-github-square"></i><span>Github</span>
                     </a>
                 </li>
-                <li class="gmail">
-                    <a href="mailto:w.melone97@gmail.com" target="_blank" rel="noopener noreferrer"><i
+                <li class="gmail contact__list-item">
+                    <a href="mailto:w.melone97@gmail.com" target="_blank" rel="noopener noreferrer" class="contact__list-item__link"><i
                             class="fas fa-envelope-square"></i><span>w.melone97@gmail.com</span>
                     </a>
                 </li>
             </ul>
-
-            <form action="#">
+        
+            <form action="#" class="contact__form">
                 <input id="name" type="text" placeholder="Name" required>
                 <input id="email" type="email" placeholder="Email address" required>
                 <textarea placeholder="Message" rows="5" cols="50" required></textarea>
